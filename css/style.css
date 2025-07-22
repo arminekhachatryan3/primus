@@ -1,0 +1,1049 @@
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+ 
+}
+ 
+
+/*----------------------manu--------------------------*/
+.manu-slide{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    z-index: 5;
+    top: 0;
+    left: 0;
+
+
+}
+.manu-slide img{
+    width: 170px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.manu-slide button {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border: none;
+    float: right;
+    margin-right: 20px;
+    top:0;
+
+}
+.manu-btn hr{
+    height: 3px;
+    width: 100%;
+    background-color: #7c186d;
+    margin-top: 12px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.slide{
+    position: absolute;
+    z-index: 1500!important;
+    display: none;
+    min-height: 200px;
+    width: 100%;
+    top: 70px;
+    background-color: black;
+    border-bottom: solid 1px #c2c70f;
+    box-shadow:0px 4px 5px #c2c70f;
+
+}
+.slide ul li{
+    list-style: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    z-index: 4;
+    left: -20px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+.manu-slide{
+    display: none;
+}
+
+
+#home{
+    position: relative;
+    border: solid;
+}
+
+
+@keyframes hr_a{
+    0% {opacity: 1;}
+
+    100% {
+        transform: rotate(45deg);
+
+    }
+}
+
+
+.hr_anim{
+    background-color: #00a157 !important;}
+
+.manu{
+    width: 100vw;
+    margin-left: 45px;
+    position: fixed;
+    left:-50px;
+    top:0;
+    z-index: 6;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.manu ul li {
+    display: inline-block;
+    position: relative;
+    padding: 15px 5px 15px 5px ;
+    font-size: 1.6vw;
+    color: white;
+
+
+}
+
+
+a img{
+    position: relative;
+    width: 150px;
+    margin-top: -20px;
+    top:10px;
+}
+
+a{text-decoration: none;
+}
+.shutter-out{
+    cursor: pointer;
+}
+
+.shutter-out:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #c2c70f;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+ul li:hover  {
+    color: black;
+}
+.shutter-out:hover:before, .shutter-out:focus:before, .shutter-out:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+/*--------------------------text------------------------*/
+
+.home{
+    background-image: url("../img/bgbgb.jpg") !important ;
+    background: no-repeat center ;
+    background-size: cover
+}
+.txt{
+    margin-top: 100px;
+    padding-left: 200px;
+    padding-bottom: 200px;
+
+}
+
+.txt p {
+    font-size: 32px;
+    margin-top: -10px;
+    opacity: 0;
+    color: transparent;
+
+
+}
+
+
+.frame-2 {
+    margin-left: 5vw;
+
+}
+.frame-3 {
+    margin-left: 10vw;
+}
+/*---------------welcome to primus----------------------*/
+.primus{
+    position: relative;
+    height: 700px;
+    width: 98%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.primus_img{
+    float: left;
+    position: relative;
+    left: 5vw;
+    width: 500px;
+    height: 550px;
+
+}
+.primus_img img{
+    width: 350px;
+    position: relative;
+    border: solid 4px #b50852;
+
+}
+
+
+.primus_txt,.primus-btn{
+    float: right;
+    width: 35%;
+    margin-top: 20px;
+    margin-right: 2vw;
+    text-align: center;
+    color: #909090;
+    font-size: 26px;
+    border: solid 4px #b50852;
+    padding: 30px;
+    background-color: black;
+}
+
+.primus_txt p{
+    font-size: 40px;
+    color: #b50852;
+    text-align: center;
+}
+
+.primus_txt:hover, .primus-btn:hover{
+    background-color:#b50852;
+    color: white;
+}
+.primus_txt:hover p{
+    color: black;
+}
+.primus-btn{
+    width: 300px;
+    position: relative;
+    top: 50px;
+
+
+}
+.img2 img{
+    width: 300px!important;
+    bottom: 100px;
+    left: 300px;
+
+}
+
+
+.img3 {
+    position: relative;
+    bottom: 400px;
+    right: 50px;
+}
+/*----------------------------carusel-------------------------*/
+.ptr_headr{
+    width: 270px;
+    height: 200px;
+    line-height: 200px;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 46px;
+    color: white;
+    float: left;
+    padding-right: 50px;
+}
+.crs{
+    float: left;
+    min-height: 200px;
+    width:62%;
+    overflow: hidden;
+    transition: transform .6s .9s;
+
+
+}
+.crs img{
+    width: 100%;
+    height: auto;
+}
+.img{
+    position: relative;
+    float: left;
+    height: 200px;
+    height: 200px;
+    padding-top: 20px;
+    line-height: 200px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.partners{
+    height: 200px;
+    background-color: #0f4961;
+}
+
+/*-------------------------------our progress-------------------------------*/
+.owl{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: center;
+    background-image: url("../img/black-cubes-3D-background.jpg") !important;
+    background: fixed 50% center ;
+}
+.owl_txt{
+    position: relative;
+    top:100%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 28px;
+
+}
+.ttl{
+    font-size: 28px;
+}
+.circl{
+    width: 17vw;
+    height: 17vw;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.circl img{
+    width: 6vw;
+    line-height: 10vw;
+    top: 10px;
+    text-align: center;
+}
+
+.content{
+    position: absolute;
+    height: 7vw;
+    top: -10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    font-size: 26px;
+
+}
+
+.content p{
+    margin-top: 4px;
+}
+
+
+.cr1, .cr2,.mask1{
+    position: absolute;
+    z-index: 2;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    border-bottom-color: transparent !important;
+    border-right-color: transparent !important;
+    border: solid 5px;
+
+}
+.mask1{
+    z-index: 3;
+    border: solid 5px white;
+
+}
+.mask2{
+    z-index: 1;
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    border: solid 5px white;
+}
+
+
+
+/*---------------------------about this site-------------------------------*/
+.about{
+    position: relative;
+    width:80%;
+    position: relative;
+    padding-top: 10px;
+    left:0;
+    right: 0;
+    margin: auto auto;
+    font-size: 24px;
+    text-align: center;
+    color: #858585;
+    background-color: #212121;
+    border-radius: 25px;
+}
+.about:hover p{
+    color:#168085;
+}
+.about div{
+    background-color: black;
+    padding: 15px;
+    margin: 25px;
+    margin-top: -25px;
+
+}
+.about_title{
+    color: #909090;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    width: 800px;
+    left:0;
+    right: 0;
+    margin: 80px auto;
+}
+
+.about_title:before {
+
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 620px;
+    top:0;
+    bottom: 0;
+    margin: auto 0;
+    border: 1px solid transparent;
+    border-left: 150px solid #168085;
+}
+
+.about_title:after{
+    position: absolute;
+    text-align: center;
+    content: '';
+    width: 0;
+    height: 0;
+    right: 620px;
+    top:0;
+    bottom: 0;
+    margin: auto 0;
+    border: 1px solid transparent;
+    border-right:150px solid #168085;
+
+}
+
+
+
+/*----------------------why choose use------------------------*/
+.choose_content{
+    font-size: 30px;
+    text-align: center;
+    color: yellow;
+    padding: 40px;
+}
+.why_choose{
+    position: relative;
+    width: 91vw;
+    height: 1000px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.choose{
+    margin: 8px;
+    width: 19vw;
+    height: 400px;
+    border-radius: 20px;
+    float: left;
+    border:solid 6px;
+}
+
+.choose img{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.choose .line{
+    content: '';
+    width: 0;
+    height: 0;
+    position: relative;
+    margin-left: 4vw;
+    border: 1px solid transparent;
+    border-right:6vw solid;
+    position: relative;
+}
+.choose .line:after {
+
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -1px;
+    left: 6.01vw;
+    border:1px solid transparent;
+    border-left:4vw solid;
+}
+
+.choose p{
+    width: 18vw;
+    position: relative;
+    text-align: center;
+    left:0;
+    right: 0;
+    margin:10px auto;
+    font-size: 20px;
+}
+
+
+
+/*---------------contact-------------------*/
+.contact{
+    margin-top:100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url("../img/green-and-black-wallpapers-mobile.jpg") !important;
+    background: fixed 50% center no-repeat ;
+}
+
+.c_us{
+    position: relative;
+    width: 80%;
+    padding: 3vw;
+    margin: auto;
+    height: 420px;
+    top: 50px;
+    border: solid #94b248;
+    background-color: #212121;
+
+
+}
+
+.c_us p{
+    text-align: center;
+    color:#a4af8a;
+    font-weight: bolder;
+    font-size: 42px;
+    margin: 28px;
+}
+
+#name, #mail{
+    width: 46%;
+    padding: 10px;
+    border: 1px solid #94b248;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+#name{
+    float: left;
+}
+
+#mail{
+    float: right}
+#msg{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    top: 10px;
+    overflow: hidden;
+    border: 1px solid #94b248;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+
+}
+
+button{
+    width: 180px;
+    float: right;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #c2c70f;
+    outline: none !important;
+}
+.plshold::-webkit-input-placeholder {
+    color: #c2c70f;
+
+
+}
+
+.plshold:focus::-webkit-input-placeholder {
+    transition: 1s;
+    -webkit-transition: 1s ;
+    font-size: 0px;
+
+}
+
+
+/*------------------------footer--------------*/
+footer{
+    height: 300px;
+}
+footer p{
+    text-align: center;
+}
+.f_txt1{
+    font-size: 52px;
+}
+
+.f_txt2{
+    font-size: 26px;
+    position: relative;
+}
+.f_txt3{
+    font-size: 20px;
+}
+
+/*----------------------registration------------------*/
+
+.reg{
+    position: relative !important;
+    background-color: transparent;
+    min-height: 700px;
+    width: 70vw;
+     top: 150px;
+    margin:  auto;
+    margin-bottom: 150px;
+    border: solid 3px #1c9bd9;
+}
+
+.reg:hover .reg-ttl{
+    background-color: #1c9bd9;
+    color: black;
+}
+
+.reg-ttl{
+    font-size: 36px;
+    text-align: center;
+    padding: 15px;
+    color:  #1c9bd9;
+    border-bottom: solid 1px  #1c9bd9;
+}
+.col1,.col2{
+    position: relative;
+    width: 32vw;
+    float: left;
+}
+.col2{
+    padding-top: -15px;
+}
+.fld{
+    position: relative;
+     background: none!important;
+    width: 28vw;
+    margin-left: 2vw;
+    margin-top: 20px;
+    height: 32px;
+    top: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    border-width: 0 0  1px  0;
+    border-color:#1c9bd9  ;
+    color: #5bc4e3;
+}
+#country{
+    width: 30vw;
+}
+.fld.error {
+    border: 1px solid red !important; }
+
+label.error {
+    position: relative;
+    margin-left: 2vw;
+    color: #871212 !important;
+}
+.reg-btn{
+    margin-right: 5vw;
+    border:solid 3px #1c9bd9;
+    background: none;
+    color:#1c9bd9;
+}
+.reg-btn:hover{
+    background-color:#1c9bd9;
+    color: white;
+}
+.fld::-webkit-input-placeholder {
+    color: #5bc4e3;
+
+
+}
+
+.fld:focus::-webkit-input-placeholder {
+    transition: 1s;
+    -webkit-transition: 1s ;
+    font-size: 0px;
+
+}
+
+input[type="text"],input[type="password"],input[type="email"],select {padding-left: 30px;}
+
+#reg_btn{
+    background-color:#1c9bd9;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .manu-slide{
+        display: inherit;
+    }
+    .manu {
+        display: none;
+    }
+    /*-------------txt-----------------*/
+    .txt{
+        margin-top: 100px;
+        padding-left: 50px;
+    ;
+    }
+
+
+    /*---------------welcome to primus----------------------*/
+    .primus{
+        position: relative;
+        height: 1000px;
+        width: 98%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .primus_txt p {
+        font-size: 26px;
+    }
+    .primus_txt, .primus-btn{
+        position: relative;
+        width: 80%;
+        margin-top: 10px;
+        left: 0;
+        right: 0;
+        font-size: 20px;
+    }
+
+    .primus_img img{
+        width: 300px;
+        margin-left:10vw;
+
+    }
+    .img2 img{
+        left: 25vw;
+    }
+
+
+    /*----------------------------carusel-------------------------*/
+
+
+    .partners{
+        height: 380px;
+    }
+    .ptr_headr{
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .crs {
+        height: 200px;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+
+
+    /*-------------------------------our progress-------------------------------*/
+
+    .circl{
+        width: 30vw !important;
+        height: 30vw !important;
+    }
+
+
+
+    .cr1, .cr2,.mask1,.mask2{
+
+        width: 29vw;
+        height: 29vw;
+    }
+
+
+    .circl img{
+        width: 12vw !important;
+
+    }
+
+
+    /*---------------------------about this site-------------------------------*/
+
+
+    .about_title{
+        font-size: 30px;
+        width: 80vw;
+    }
+    .about div{
+        margin-top: -40px;
+        font-size: 18px;
+    }
+
+    .about_title:before {
+
+        left: 60vw;
+        border-left: 100px solid #168085;
+    }
+
+    .about_title:after{
+        right: 60vw;
+        border-right: 100px solid #168085;
+
+    }
+
+
+    /*----------------------why choose use------------------------*/
+    .choose_content{
+        font-size: 30px;
+        text-align: center;
+        color: yellow;
+        padding: 40px;
+    }
+    .why_choose{
+        width: 86vw;
+        height: 1900px;
+
+    }
+    .choose{
+        width: 38vw;
+
+    }
+
+
+    .choose .line{
+        margin-left: 4vw;
+        border-right:14vw solid;
+    }
+    .choose .line:after {
+        left: 14.01vw;
+        border-left:14vw solid;
+    }
+
+    .choose p{
+        width: 18vw;
+        position: relative;
+        text-align: center;
+        left:0;
+        right: 0;
+        margin:10px auto;
+        font-size: 18px;
+    }
+
+
+
+
+}
+@media only screen and (max-width: 700px) {
+
+    /*-------------txt-----------------*/
+    .txt p{
+
+        font-size: 16px;
+    }
+
+
+
+    /*---------------welcome to primus----------------------*/
+    .primus{
+        height: 355vw;
+    }
+    .primus_img{
+        float: left;
+        position: relative;
+        left: 5vw;
+        width: 90vw;
+        height: 550px;
+        height: 220vw;
+
+    }
+    .primus_img  img{
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        text-align: center;
+        width: 75vw !important;
+
+    }
+    .primus_txt p {
+        font-size:10vw;
+    }
+    .primus_txt, .primus-btn{
+        padding: 5px;
+        width: 70%;
+        margin-top: 10px;
+        font-size: 4vw;
+        margin-right:10vw;
+    }
+    .primus-btn{
+        margin-top: -20px;
+    }
+    .img2 img{
+        bottom:0;
+        left: 0;
+
+    }
+
+
+    .img3 {
+        bottom:0;
+        right: 0;
+    }
+
+    /*----------------------------carusel-------------------------*/
+
+
+    .ptr_headr{
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .crs {
+        height: 200px;
+        width: 80vw;
+        margin-left: 5vw;
+    }
+
+
+
+    /*-------------------------------our progress-------------------------------*/
+    .circl{
+        width: 81vw !important;
+        height: 81vw !important;
+    }
+
+    .cr1, .cr2,.mask1,.mask2{
+
+        width: 75vw;
+        height: 75vw;
+    }
+
+    .circl .content{
+        top: -30%;;
+    }
+    .circl img{
+        width: 30vw !important;
+
+    }
+
+
+    /*---------------------------about this site-------------------------------*/
+    .about{
+        width: 80vw;
+
+    }
+
+    .about_title{
+        font-size: 20px;
+        width: 80vw;
+    }
+
+    /*----------------------why choose use------------------------*/
+
+    .why_choose{
+        width: 86vw;
+        height: 3700px;
+
+    }
+    .choose{
+        width: 75vw;
+    }
+    .choose .line{
+        margin-left: 26vw;
+        border-right:18vw solid;
+    }
+    .choose .line:after {
+
+        left: 16.01vw;
+        border-left:18vw solid;
+    }
+
+    .choose p{
+        width: 70vw;
+
+    }
+
+
+
+
+    /*---------------contact-------------------*/
+    .c_us{
+        width: 80%;
+        height: 570px;
+
+
+
+    }
+
+    .c_us p{
+        font-size: 7vw;
+    }
+
+    #name, #mail, #msg{
+        width: 90% ;
+        margin: 10px;
+        float: left;
+
+    }
+
+    button{
+        width: 180px;
+        font-size: 14px;
+    }
+
+    /*----------------------registration------------------*/
+
+    .reg{
+        width: 90%;
+        height: 1050px;
+        padding: 20px;
+    }
+
+    .fld{
+        width:78vw;
+
+    }
+    #country{
+        width: 80vw;
+    }
+    .col1,.col2{
+        float: inherit;
+    }
+
+}
